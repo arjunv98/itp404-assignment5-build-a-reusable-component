@@ -1,22 +1,60 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.demo-box {
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  width: 800px;
+  border: 2px solid black;
 }
 
-.App-link {
-  color: #09d3ac;
+.ratio-bar {
+	margin: 20px auto;
+}
+
+.ratio-bar .values .value {
+	float: left;
+	text-align: center;
+}
+
+.ratio-bar .scale .graduation {
+	float: left;
+	text-align: center;
+}
+
+.ratio-bar .bars .bar {
+	float: left;
+	height: 10px;
+}
+
+.ratio-bar .bars div.bar:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.ratio-bar .bars div.bar:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ratio-bar .legends {
+	text-align: center;
+}
+
+
+.ratio-bar .legends .legend {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.ratio-bar .legends .legend .dot {
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.ratio-bar .legends .legend .label {
+	margin-left: 2px;
+	vertical-align: middle;
 }
